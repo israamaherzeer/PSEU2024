@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Html form</title>
+    </head>
+    <body>
+        
+        
+        <div style="width: 50%;  margin-left:400px;">
+            <form method ="post">
+                <table  border="1" cellpadding="15"  cellspacing="0"  width="100%">
+                 <thead> 
+                    <th colspan="2"><h1>Summer Camp Registration Form</h1> </th>
+                 </thead>
+                 <tbody>
+
+                    <tr> 
+                    <td><label for="Name">Full Name</label></td>
+                    <td><input type="text" placeholder="Enter First Name" id="Name"  name="fullName" required></td>
+                    </tr>
+
+                    <tr>
+                    <td><label for="date">Date of Birth</label></td>
+                    <td><input type="date" id="date" name="date" max="2004-12-31"></td>
+                    </tr>
+
+                    <tr>
+                    <td> Gender</td>
+                     <td>
+                     <input type="radio" id="male" name="gender" value="male">
+                     <label for="male">Male</label>
+                     <input type="radio" id="female" name="gender" value="female">
+                     <label for="female">Female</label>
+                      </td>
+                     </tr>
+            
+                    <tr><td><label for="country">Country</label></td>
+                    <td>
+                    <select id="country" name="country">
+                    <option value="" selected disabled>Country</option>
+                     <option value="Palestine">Palestine</option>
+                     <option value="Jordan">Jordan</option>
+                     <option value="Turkey">Turkey</option>
+                     <option value="YAMEN">YAMEN</option>
+                     <option value="LEBNON">LEBNON</option>
+                     <option value="SYRIA">SYRIA</option>
+                     <option value="IRAQ">IRAQ</option>
+                    </select></td>
+                </tr>
+
+                <tr> 
+                    <td><label for="email">E-mail</label></td>
+                    <td><input type="email" placeholder="Enter E-mail" id="email" name="email" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="phone">phone</label>  </td>
+                    <td><input type="text" id="phone" placeholder="Enter phone" name="phone"></td>
+                </tr>
+
+                <tr>
+                    <td> <label for="password">Password</label></td>
+                    <td> <input type="password" id="password" name="password" required></td>
+                <tr> 
+                    <td><label for="Confirm-Password">Confirm Password:</label></td>
+                    <td><input type="password" name="Confirm-Password" id="Confirm-Password" required></td>
+                </tr>
+        
+                <tr> 
+                    <td><label for="GPA">GPA(100)</label></td>
+                    <td><input type="number" placeholder="92.5"id="GPA" name="GPA" step="0.01"></td>
+                </tr>
+            
+                <tr> 
+                    <td><label for="Programming-skills" >Programming skills(0,100)</label></td>
+                    <td><input type="range" id="Programming-skills" name="Programming-skills" min="0" max="100"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="color">Your favorite color</label></td>
+                    <td><input type="color" name="color" id="color"></td>
+                </tr>
+            
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" id="agree" name="agree" value="true" required> <label for="agree">I Agree to the Terms of Use</label></td>
+                </tr>
+            
+                 </tbody>
+               
+                 <tfoot>
+                     <tr align="right">
+                        <td colspan="2">
+            
+                            <input type="submit" value="submit"> 
+                            <input type="reset" value="cancel"> 
+                        </tfoot>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    
+    </div>
+
+
+
+
+    
+</body>
+</html>
