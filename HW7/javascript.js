@@ -2,12 +2,11 @@
 const choices = ["Scissors","Spock","Paper","Lizard" ,"Rock"];
 let isDraw = false;
 
-// Rules 
+
 var gameRuleBg = document.getElementById("gameRuleBg");
 var rulesButton = document.getElementById("rulesButton");
 var span = document.getElementById("close");
 let ContainerBody = document.getElementById("ContainerBody");
-let result = 0;
 
 rulesButton.onclick = function() {
   gameRuleBg.style.display = "block";
@@ -15,15 +14,27 @@ rulesButton.onclick = function() {
 span.onclick = function() {
   gameRuleBg.style.display = "none";
 }
+function getResult() {
+  let scoreresult = localStorage.getItem('result');
+  scoreresult = scoreresult ? JSON.parse(scoreresult) : 0;
+  return scoreresult;
+}
+
+
+function storeresult() {
+  localStorage.setItem('result', JSON.stringify(result));
+}
+let result = getResult();
+document.getElementById("result").innerText = result;
 
 
 function userChoice(id) {
 ContainerBody.innerHTML = `
+<div class="header">
+<div>YOU PICKED</div>
+<div>THE HOUSE PICKED</div>
+</div>
 <div class="choiceSection">
-  <div class="header">
-      <div>YOU PICKED</div>
-      <div>THE HOUSE PICKED</div>
-      </div>
   <div class="choices">
     <div class="userChoice">
     <div class="choiceAfterChoose" id="${id}" >
@@ -84,7 +95,8 @@ function playGame  (id,randomchoice)
   {
   isWin=true;
 
-setTimeout (document.getElementById("result").innerText=(++result),4000 )
+    setTimeout(document.getElementById("result").innerText = (++result), 4000)
+    storeresult();
 }
   else{
         isWin =false
