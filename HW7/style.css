@@ -1,0 +1,378 @@
+*{
+
+    font-family: "Barlow Semi Condensed", serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+body{
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Header */
+.containerHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px  solid   hsl(217, 16%, 45%);
+    width:50%;
+    padding: 10px;
+    border-radius:5px ;
+    margin-bottom: 60px;
+}
+
+.score-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    width:15%; 
+    border-radius:5px ;
+    align-items: center;
+}
+#score {
+color :hsl(229, 64%, 46%) ;
+font-weight: bold;
+font-size: 15px;
+
+}
+#result {
+color : hsl(229, 25%, 31%); 
+font-weight: bold;
+font-size: 50px;
+}
+
+/* rules */
+#rulesButton{
+border: 1px  solid   hsl(217, 16%, 45%); 
+border-radius:8px;
+color: white;
+background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)); 
+position: absolute;
+right: 15px;
+bottom: 15px;
+width:8%;
+height: 5%;
+cursor: pointer;
+}
+
+#gameRuleBg {
+    display: none; 
+    position: absolute;
+    z-index: 5; 
+    width:27%;
+    height: 40%;
+    top: 130px;
+    left: 600px;
+}
+#rulesheader{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.gameRules {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    border-radius: 5px;
+}
+.Rules{
+    color : hsl(229, 25%, 31%);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#ContainerBody{
+margin: 40px;
+position: relative;
+
+}
+
+.choice{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    z-index: 4;
+    position: absolute;
+    background-color:#e8e8e8;
+    border: 12px solid;
+    
+}
+.icon{
+position: absolute;
+left: 22%;
+top: 22%;
+}
+
+#Scissors{
+border-color:   hsl(40, 84%, 53%);
+box-shadow: inset 0 5px #bdc0d1,   0px 7px  hsl(39, 89%, 49%)
+}
+#SpocK {
+border-color:  hsl(189, 58%, 57%);
+box-shadow: inset 0 5px #bdc0d1,   0px 7px   hsl(189, 59%, 53%) 
+}
+#Paper{
+border-color :   hsl(230, 89%, 65%); 
+box-shadow: inset 0 5px #bdc0d1,   0px 7px   hsl(230, 89%, 62%);
+}
+#Lizard{
+border-color :  hsl(261, 72%, 63%);
+box-shadow: inset 0 5px #bdc0d1,   0px 7px   hsl(261, 73%, 60%);
+}
+#Rock{
+border-color : hsl(349, 70%, 56%);
+box-shadow: inset 0 5px #bdc0d1,   0px 7px  hsl(349, 71%, 52%)
+}
+.SpockPosition{
+    top: 20%;
+    left:-15%;
+}
+.ScissorsPosition{
+top: -10%;
+left: 35%;
+}
+.PaperPosition{
+top: 20%;
+right:-15%}
+
+.LizardPosition{
+bottom: -10%;
+left:5px
+}
+.RockPosition{
+bottom: -10%;
+right: 5px;
+}
+
+.choiceSection{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+width: 600px;
+height: 400px;
+
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    height:70% ;
+}
+.userChoice{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+}
+.choiceAfterChoose { 
+border-radius: 50%;
+width: 160px;
+height: 160px;
+z-index: 4;
+position: absolute;
+background-color:#e0e0e0;
+border: 20px solid ;
+
+
+}
+.iconafterChoose{
+position: absolute;
+left: 25%;
+top: 25%;
+width :50%;
+height:50%
+}
+.ComputerChoice{
+    width: 33%;
+    height: 70%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.beforComputerChoice{
+border-radius: 50%;
+width: 150px;
+height: 150px;
+z-index: 4;
+background-color: #172240;
+border: 25px;
+}
+.playagain{
+width: 55%;
+border-radius:8px;
+height: 45%;
+color : hsl(229, 25%, 31%);
+font-size: 20px;
+cursor: pointer;
+}
+.result{
+color: white;
+font-size: 40px;
+}
+.choiceSectionwithResult{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+width: 1200px;
+height: 400px;
+}
+.center{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: end;
+width: 35%;
+height: 70%;
+}
+@media (min-width: 375px) and (max-width: 700px){
+.containerHeader {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 90%;
+height: 60px;
+align-items: center;
+}
+#ContainerBody{
+    width:280px;
+    height: 300px;
+    margin-top: 5px;
+}
+#rulesButton {
+    position: absolute;
+    left: 36%;
+    bottom: 15px;
+    width: 30%;
+    height: 5%;
+}
+.logo ,.score-section{
+    height: 90%;
+}
+#score {
+    font-size: 10px;
+}
+
+#result {
+    font-size: 30px;
+}
+#gameRuleBg {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: white;
+        }
+.gameRules {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+        }
+.ruleImage{
+    max-width: 80%;
+    height: auto;
+    }
+#close {
+    position: absolute;
+    bottom: 20px;
+    right: 40%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    }
+
+.choiceSection {
+    width: 90%;
+    height: 100%;
+    margin-left: 30px;
+}
+.header {
+    align-items: center;
+    width:110%;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ComputerChoice {
+    height: 60%;
+    align-items: flex-start;
+}
+.choices {
+    width: 100%;
+    height: 70%;
+}
+
+.choiceAfterChoose {
+    width: 90px;
+    height: 90px;
+    border: 12px solid;
+
+}
+.iconafterChoose {
+    position: absolute;
+    left: 22%;
+    top: 22%;
+}
+
+.beforComputerChoice {
+    width: 100px;
+    height: 100px;
+}
+.choiceSectionwithResult {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+}
+.center {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 200px;
+    left: 25%;
+    cursor: pointer;
+}
+.result {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    }
+
+}

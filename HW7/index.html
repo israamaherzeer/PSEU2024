@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="containerHeader">
+        <img src="images/logo-bonus.svg" class="logo" alt="logo" >
+        <div class="score-section">
+            <span id="score">SCORE</span>
+            <span id="result">0</span>
+        </div>
+        </div>
+        <div id="ContainerBody">
+                <div class="choice ScissorsPosition"  id="Scissors"onclick="userChoice(id)">
+                    <img  class="icon"src="images/icon-scissors.svg" > 
+                </div>
+            <img  src="images/bg-pentagon.svg" alt="" >
+                    <div class="choice SpockPosition" id="SpocK" onclick="userChoice(id)" >
+                        <img class="icon" src="images/icon-spock.svg" >
+                </div>
+                    <div class="choice PaperPosition"id="Paper" onclick="userChoice(id)">
+                        <img class="icon" src="images/icon-paper.svg" >
+                </div>
+                <div class="third">
+                    <div class="choice LizardPosition"id="Lizard" onclick="userChoice(id)">
+                        <img class="icon" src="images/icon-lizard.svg" >
+                    </div>
+                        <div class="choice RockPosition " id="Rock" onclick="userChoice(id)"> 
+                        <img class="icon" src="images/icon-rock.svg" >
+                    </div>
+                </div>
+            </div>
+        <button id="rulesButton">RULES</button>
+    <div id="gameRuleBg" >
+        <div class="gameRules">
+            <div id="rulesheader">
+            <span class="Rules">RULES</span>
+            <img  id="close" src="images/icon-close.svg"  width="20px" height="20px">
+                </div>
+        <img src="images/image-rules-bonus.svg" class="ruleImage" >
+                        </div>
+                        </div>
+
+
+    <script src="javascript.js"></script>
+
+
+</body>
+</html>
