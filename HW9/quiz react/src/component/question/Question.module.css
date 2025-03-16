@@ -1,0 +1,46 @@
+
+.question{
+    line-height: 40px;
+    font-size:20px;
+    width: 100%;
+    height: 20%;
+}
+.answers{
+    height: 70%;
+    margin: 0;
+    width: 90%;
+}
+.answers :hover{
+    cursor: pointer;
+    background: rgba(0, 128, 0, 0.144);
+
+}
+.answer{
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid rgba(0, 128, 0, 0.144);
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.green {
+background: rgba(0, 128, 0, 0.144);
+}
+.red {
+background: rgba(255, 0, 0, 0.344);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    width: 90%;
+}
+.feedback{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
